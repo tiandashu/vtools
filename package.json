@@ -1,6 +1,6 @@
 {
   "name": "@vtian/vtools",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "tools",
   "main": "dist/vtools.umd.js",
   "module": "dist/vtools.esm.js",
@@ -19,10 +19,12 @@
     "y": "npm --no-git-tag-version version minor",
     "z": "npm --no-git-tag-version version patch",
     "lint": "eslint src",
-    "fix": "npm run lint -- --fix",
+    "fix": "npm run lint --fix",
     "commit": "git-cz",
     "test": "jest",
-    "test:c": "jest --coverage"
+    "test:c": "jest --coverage",
+    "prepublish": "npm run build && npm run x",
+    "pub": "npm publish --access=public"
   },
   "author": "tianlu",
   "license": "ISC",
