@@ -10,3 +10,4 @@ docs
 .eslintignore
 .huskyrc
 .commitlint.config.js
+.commitlint.config
