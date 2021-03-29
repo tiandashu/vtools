@@ -6,12 +6,12 @@
   "module": "dist/vtools.esm.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiandashu/loan-calculate-utils.git"
+    "url": "https://github.com/tiandashu/vtools.git"
   },
   "bugs": {
-    "url": "https://github.com/tiandashu/loan-calculate-utils/issues"
+    "url": "https://github.com/tiandashu/vtools/issues"
   },
-  "homepage": "https://github.com/tiandashu/loan-calculate-utils#readme",
+  "homepage": "https://github.com/tiandashu/vtools#readme",
   "scripts": {
     "dev": "rollup -w --environment NODE_ENV:development -c scripts/rollup.config.dev.js",
     "build": "rollup --environment NODE_ENV:development -c scripts/rollup.config.prod.js",
@@ -23,8 +23,11 @@
     "commit": "git-cz",
     "test": "jest",
     "test:c": "jest --coverage",
-    "prepublish": "npm run build && npm run x",
-    "pub": "npm publish --access=public"
+    "prepublish": "npm run build",
+    "pub": "npm publish --access=public",
+    "pub:x": "npm run x && npm publish --access=public",
+    "pub:y": "npm run y && npm publish --access=public",
+    "pub:z": "npm run z && npm publish --access=public"
   },
   "author": "tianlu",
   "license": "ISC",
